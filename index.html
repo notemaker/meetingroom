@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>會議室借用</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container-fluid padding-tb">
+            <div class="row">
+                <div class="col-8">
+                    <h1>會議室借用系統</h1>
+                </div>
+                <div class="col-4">
+                    <a href="https://forms.gle/t1A2pauCFbmsxraP6" class="btn btn-danger float-right" target="_blank">申請借用</a>
+                </div>
+                <div class="col-12 mb-3">
+                    <div class="group">
+                        <label>會議室搜尋</label>
+                        <select id="select">
+                            <option value="" checked>All</option>
+                            <option value="A101">A101</option>
+                            <option value="A102">A102</option>
+                            <option value="A103">A103</option>
+                        </select>
+                        <input type="submit" id="doaction" class="btn btn-primary ml-3" value="查詢">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="table-responsive-md">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="w-15">申請日期</th>
+                                    <th scope="col" class="w-10">申請部門</th>
+                                    <th scope="col" class="w-10">申請人</th>
+                                    <th scope="col" class="w-15">會議室名稱</th>
+                                    <th scope="col" class="w-10">借用日期</th>
+                                    <th scope="col" class="w-15">借用時間（起）</th>
+                                    <th scope="col" class="w-15">借用時間（迄）</th>
+                                    <th scope="col" class="w-10">事由</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-data">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
